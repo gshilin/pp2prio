@@ -182,7 +182,7 @@ SELECT
   bb.approval QAMT_AUTHNUM,
   bb.cardnum QAMO_PAYMENTCOUNT, -- מס כרטיס/חשבון
   bb.cardexp QAMO_VALIDMONTH, -- תוקף
-  COALESCE(co.total_amount, bb.amount) QAMO_PAYPRICE, -- סכום בפועל
+  COALESCE(bb.amount, co.total_amount) QAMO_PAYPRICE, -- סכום בפועל
   CASE co.currency
     WHEN 'USD' THEN '$'
     WHEN 'EUR' THEN 'EUR'
