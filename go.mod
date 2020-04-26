@@ -1,4 +1,4 @@
-module github.com/gshilin/bb2prio
+module github.com/gshilin/pp2prio
 
 require (
 	github.com/go-sql-driver/mysql v1.4.1
@@ -6,3 +6,5 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/pkg/errors v0.8.1
 )
+
+go 1.13
